@@ -1,0 +1,1110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Runewizard for Path of Diablo</title>
+<meta name="description" content="See what Runewords you can make with the Runes you&#39;ve found.">
+<meta name="author" content="Denis Fabrice">
+<script type="text/javascript" src="runewizard/toolbox.js"></script>
+<script type="text/javascript" src="runewizard/sorttable.js"></script>
+<script type="text/javascript" src="runewizard/main.js"></script>
+<link rel="stylesheet" type="text/css" href="runewizard/main.css" media="all">
+<link rel="Shortcut Icon" type="image/ico" href="runewizard/favicon.html">
+</head>
+<body>
+<div id="JsLayer" style="display: none; position: absolute; left: 795px; top: 690px;">
+<h3 id="JsLayerTitle">Splendor</h3>
+<div id="JsLayerType">방패</div>
+<div id="JsLayerContents"><div id="Splendor" style="display: block;">
++1 모든 스킬 레벨<br>
++10% 캐스팅 속도 증가<br>
++20% 방어속도 증가<br>
++60-100% 방어력 증가 (가변)<br>
++10 에너지<br>
+마나 재생 15%<br>
+50% 몬스터로 부터 얻는 골드 증가<br>
+20% 매직 아이템 얻을 확률 증가<br>
++3 시야 증가
+</div></div>
+</div>
+<div id="body">
+<div id="header">
+<h2>패스 오브 디아블로 룬 마법사</h2>
+<div id="JsHelpBody" style="display: block;">
+<h3>이것이 무엇인가요?</h3>
+룬 마법사는 현재 가진 룬으로 만들 수 있는 룬워드를 손쉽게 확인할 수 있도록 도와줍니다.<br>
+보유하고 있는 룬을 클릭하세요. 만들 수 있는 룬워드가 자동으로 강조됩니다.<br>
+테이블 정렬을 하고 싶다면, "타입"을 클릭해서 장비 타입에 따라 룬워드를 정렬할 수 있습니다. 유용하죠?<br>
+<br>
+<h3>룬</h3>
+룬은 가장 흔한 룬부터 희귀한 룬까지, 위에서 아래로, 왼쪽에서 오른쪽으로 희소성에 따라 정렬되어 있습니다.
+세로 그룹을 기준으로 <strong>흔함</strong>, <strong>약간 희귀함</strong>, 그리고 <strong>매우 희귀함</strong>을 대략적으로 의미합니다. 이 순서는 또한
+<a href="http://www.battle.net/diablo2exp/items/cube.shtml">호라드릭 큐브 룬 업그레이드 공식</a>과도 일치한다는 점을 알아두세요. 예) 3 x 탈룬 = 1 x 랄룬.<br>
+<br>
+<i>오리지널 룬 마법사는 Denis Fabrice가 만들었습니다.</i>
+</div>
+</div>
+<div class="col-sec">
+<div class="runes">
+<h2>룬</h2>
+<div class="runes-misc">
+<a href="runewizard/index.html#" id="JsClearRunes" style="display: none;">지우기</a>
+</div>
+<ul class="list1">
+<li><a href="runewizard/index.html#" id="Rune-El" class="have_not">엘</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Eld" class="have_not">엘드</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Tir" class="have_not">티르</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Nef" class="have_not">네프</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Eth" class="have_not">에드</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ith" class="have_not">아이드</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Tal" class="have_not">탈</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ral" class="have_not">랄</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ort" class="have_not">오르트</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Thul" class="have_not">주울</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Amn" class="have_not">앰</a></li>
+</ul>
+<ul class="list2">
+<li><a href="runewizard/index.html#" id="Rune-Sol" class="have_not">솔</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Shael" class="have_not">샤엘</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Dol" class="have_not">돌</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Hel" class="have_not">헬</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Io" class="have_not">아이오</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Lum" class="have_not">룸</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ko" class="have_not">코</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Fal" class="have_not">팔</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Lem" class="have_not">렘</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Pul" class="have_not">풀</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Um" class="have_not">움</a></li>
+</ul>
+<ul class="list3">
+<li><a href="runewizard/index.html#" id="Rune-Mal" class="have_not">말</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ist" class="have_not">이스트</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Gul" class="have_not">굴</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Vex" class="have_not">벡스</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ohm" class="have_not">옴</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Lo" class="have_not">로</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Sur" class="have_not">수르</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Ber" class="have_not">베르</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Jah" class="have_not">자</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Cham" class="have_not">참</a></li>
+<li><a href="runewizard/index.html#" id="Rune-Zod" class="have_not">조드</a></li>
+</ul>
+</div>
+</div>
+<div class="col-pri">
+<h2>룬워드<span id="runewords-count"></span></h2>
+<table class="runewords sortable" cellspacing="0">
+<thead>
+<tr>
+<th class="aleft"><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 0);return false;">룬워드</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 1);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 2);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 3);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 4);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 5);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 6);return false;">룬</a></th>
+<th><a href="runewizard/index.html#" class="sort" onclick="sortables.ts_resortTable(this, 7);return false;">타입</a></th>
+<th class="cmpl"><a href="runewizard/index.html#" class="sortdown" onclick="sortables.ts_resortTable(this, 8);return false;">Missing Runes</a></th>
+</tr>
+</thead>
+<tbody>
+<tr style="display:none;" class="template">
+<th>&nbsp;</th>
+<td class="rune">&nbsp;</td>
+<td class="rune">&nbsp;</td>
+<td class="rune">&nbsp;</td>
+<td class="rune">&nbsp;</td>
+<td class="rune">&nbsp;</td>
+<td class="rune">&nbsp;</td>
+<td class="type">&nbsp;</td>
+<td class="cmpl">&nbsp;</td>
+</tr></tbody></table>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">Runewizard</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Denis Fabrice</span> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.0/be/">Creative Commons Attribution-Noncommercial-Share Alike License</a>.</p>
+<p class="add"><u>Additional conditions</u>: this application in its original or derived form can not be redistributed, hosted,
+or included	in any way on<br>
+web sites selling Diablo2 items (including affiliated or associated websites),
+or web sites offering downloads of Diablo 2 hacks.</p>
+<a class="cc-icon" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.0/be/"><img alt="Creative Commons License" style="border-width:0" src="runewizard/by-nc-sa-88x31.png"></a>
+</div>
+</div>
+
+<div id="Ancient_s_Pledge" style="display:none">
++50% 방어력 증가<br>
+콜드 저항력 +43%<br>
+파이어 저항력 +48%<br>
+라이트닝 저항력 +48%<br>
+포이즌 저항력 +48%<br>
+10% 피격시 데미지 마나로 흡수
+</div>
+<div id="Black" style="display:none">
++120% 데미지 증가<br>
+40% 강한 타격 확률<br>
++200 공격 등급<br>
+3-14 콜드 데미지 추가 - 3초간 지속<br>
++10 생명력<br>
+15% 공격속도 증가<br>
+적을 밀쳐냄<br>
+마법과 원소 데미지 감소 2<br>
+레벨 4 커프스 익스플로젼 (12 차지)
+</div>
+<div id="Fury" style="display:none">
++209% 데미지 증가<br>
+40% 공격속도 증가<br>
+몬스터 회복 저지<br>
+66% 상처 악화<br>
+33% 치명적 공격<br>
+목표물의 방어력 무시<br>
+-25% 목표물의 방어<br>
+20% 공격등급 추가 상승<br>
+6% 라이프 획득(공격 명중시)<br>
++5 프렌지 (바바리안 전용)
+</div>
+<div id="Holy_Thunder" style="display:none">
++60% 데미지 증가<br>
+-25% 목표물의 방어<br>
+5-30 파이어 데미지 추가<br>
+21-110 라이트닝 데미지 추가<br>
++75 포이즌 데미지 (매 5초당)<br>
++10 최대 데미지<br>
+라이트닝 저항력 +60%<br>
++5 최대 라이트닝 저항력<br>
++3 홀리 쇼크 (팔라딘 전용)<br>
+레벨 7 체인 라이트닝 (60 차지)
+</div>
+<div id="King_s_Grace" style="display:none">
++100% 데미지 증가<br>
++100% 데몬에게 주는 데미지 상승<br>
++50% 언데드에게 주는 데미지 상승<br>
+5-30 파이어 데미지 추가<br>
+3-14 콜드 데미지 추가 - 3초간 지속<br>
++150 공격 등급<br>
++100 데몬에 대한 공격등급 상승<br>
++100 언데드에 대한 공격등급 상승<br>
+7% 라이프 획득(공격 명중시)
+</div>
+<div id="Leaf" style="display:none">
+5-30 파이어 데미지 추가<br>
++3 파이어 스킬<br>
++3 파이어 볼트 (소서리스 전용)<br>
++3 블레이즈 (소서리스 전용)<br>
++3 웜쓰 (소서리스 전용)<br>
++2 마나 상승(적 제거시)<br>
++ (2 /레벨) +2-198 방어력 (캐릭터 레벨에 비례해서)<br>
+콜드 저항력 +33%
+</div>
+<div id="Lionheart" style="display:none">
++20% 데미지 증가<br>
+착용 가능 요구치 -15%<br>
++25 힘<br>
++10 에너지<br>
++20 생명력<br>
++15 민첩성<br>
++50 라이프<br>
+모든 저항력 +30
+</div>
+<div id="Lore" style="display:none">
++1 모든 스킬 레벨<br>
++10 에너지<br>
++2 마나 상승(적 제거시)<br>
+라이트닝 저항력 +30%<br>
+물리 데미지 감소 7<br>
++2 시야 증가
+</div>
+<div id="Malice" style="display:none">
++33% 데미지 증가<br>
++9 최대 데미지<br>
+100% 상처 악화<br>
+-25% 목표물의 방어<br>
+-100 몬스터 방어 감소(명중시)<br>
+몬스터 회복 저지<br>
++50 공격 등급<br>
+라이프 흡수 -5
+</div>
+<div id="Melody" style="display:none">
++50% 데미지 증가<br>
++300% 언데드에게 주는 데미지 상승<br>
++3 보우 & 크로스보우 스킬 (아마존 전용)<br>
++3 리썰 스트라이크 (아마존 전용)<br>
++3 닷지 (아마존 전용)<br>
++3 슬로우 미사일 (아마존 전용)<br>
+20% 공격속도 증가<br>
++10 민첩성<br>
+적을 밀쳐냄
+</div>
+<div id="Memory" style="display:none">
++3 소서리스 스킬 레벨<br>
+33% 캐스팅 속도 증가<br>
+최대 마나 증가 20%<br>
++3 에너지 실드 (소서리스 전용)<br>
++2 스태틱 필드 (소서리스 전용)<br>
++10 에너지<br>
++10 생명력<br>
++9 최소 데미지<br>
+-25% 목표물의 방어<br>
+라이트닝 서지가 25-35%의 추가 데미지를 물리로 입힘 (가변)<br>
++50% 방어력 증가
+</div>
+<div id="Nadir" style="display:none">
++50% 방어력 증가<br>
++10 방어력<br>
++30 원거리 공격 방어<br>
+레벨 13 클럭 오브 섀도우 (9 차지)<br>
++2 마나 상승(적 제거시)<br>
++5 힘<br>
+-33% 몬스터로 부터 얻는 골드 증가<br>
+-3 시야 증가
+</div>
+<div id="Radiance" style="display:none">
++75% 방어력 증가<br>
++30 원거리 공격 방어<br>
++10 에너지<br>
++10 생명력<br>
+15% 피격시 데미지 마나로 흡수<br>
+마법과 원소 데미지 감소 3<br>
++33 마나<br>
+물리 데미지 감소 7<br>
++5 시야 증가
+</div>
+<div id="Rhyme" style="display:none">
+20% 블럭 성공률 증가<br>
+40% 방어속도 증가<br>
+모든 저항력 +25<br>
+마나 재생 15%<br>
+결빙되지 않음<br>
+50% 몬스터로 부터 얻는 골드 증가<br>
+25% 매직 아이템 얻을 확률 증가
+</div>
+<div id="Smoke" style="display:none">
++75% 방어력 증가<br>
++280 원거리 공격 방어<br>
+모든 저항력 +50<br>
+20% 힛 리커버리 속도 증가<br>
+레벨 6 위큰 (18 차지)<br>
++10 에너지<br>
+-1 시야 증가
+</div>
+<div id="Stealth" style="display:none">
+마법과 원소 데미지 감소 3<br>
++6 민첩성<br>
++15 최대 스태미나<br>
+포이즌 저항력 +30%<br>
+마나 재생 15%<br>
+25% 달리기/걷기 속도 증가<br>
+25% 캐스팅 속도 증가<br>
+25% 힛 리커버리 속도 증가
+</div>
+<div id="Steel" style="display:none">
+20% 데미지 증가<br>
++3 최소 데미지<br>
++3 최대 데미지<br>
++50 공격 등급<br>
+50% 상처 악화<br>
+25% 공격속도 증가<br>
++2 마나 상승(적 제거시)<br>
++1 시야 증가
+</div>
+<div id="Strength" style="display:none">
+35% 데미지 증가<br>
+25% 강한 타격 확률<br>
+7% 라이프 획득(공격 명중시)<br>
++2 마나 상승(적 제거시)<br>
++20 힘<br>
++10 생명력<br>
++4-6 근접 공격시 라이프 획득 (가변)
+</div>
+<div id="Venom" style="display:none">
+몬스터가 달아남(명중시) 25%<br>
+몬스터 회복 저지<br>
+목표물의 방어력 무시<br>
+7% 마나 획득(공격 명중시)<br>
+레벨 15 데서크레이트 (27 차지)<br>
+레벨 13 포이즌 노바 (11 차지)<br>
++273 포이즌 데미지 추가 (매 6초당)
+</div>
+<div id="Wealth" style="display:none">
+300% 몬스터로 부터 얻는 골드 증가<br>
+100% 매직 아이템 얻을 확률 증가<br>
++2 마나 상승(적 제거시)<br>
++10 민첩성
+</div>
+<div id="White" style="display:none">
+몬스터가 달아남(명중시) 25%<br>
++10 생명력<br>
++3 포이즌 & 본 스펠 (네크로맨서 전용)<br>
++3 본 아머 (네크로맨서 전용)<br>
++2 본 스피어 (네크로맨서 전용)<br>
++4 스켈레톤 마스터리 (네크로맨서 전용)<br>
+마법과 원소 데미지 감소 4<br>
+20% 캐스팅 속도 증가<br>
++13 마나
+</div>
+<div id="Beast" style="display:none">
+장착시 레벨 9 파나티시즘 오라 발동<br>
++40% 공격속도 증가<br>
++240-270% 데미지 증가 (가변)<br>
+20% 강한 타격 확률<br>
+25% 상처 악화<br>
++3 워베어<br>
++3 변신술<br>
+몬스터 회복 저지<br>
++25-40 힘 (가변)<br>
++10 에너지<br>
++2 마나 상승(적 제거시)<br>
+레벨 13 그리즐리 (5 차지)
+</div>
+<div id="Bramble" style="display:none">
+장착시 레벨 15-21 쏜즈 오라 발동 (가변)<br>
++50% 힛 리커버리 속도 증가<br>
++25-50% 포이즌 스킬 데미지 (가변)<br>
++300 방어력<br>
+최대 마나 증가 5%<br>
+마나 재생 15%<br>
++5% 최대 콜드 저항력<br>
+파이어 저항력 +30%<br>
+포이즌 저항력 +100%<br>
++13 라이프 상승(적 제거시)<br>
+레벨 13 스피리트 오브 바브 (33 차지)
+</div>
+<div id="Chaos" style="display:none">
+9% Chance To Cast Level 11 Frozen Orb On Striking<br>
+11% Chance To Cast Level 9 Charged Bolt On Striking<br>
++35% 공격속도 증가<br>
++290-340% 데미지 증가 (가변)<br>
+216-471 매직 데미지 추가<br>
+25% 상처 악화<br>
++1 질<br>
++10 힘<br>
++15 라이프 상승(데몬 처치시)
+</div>
+<div id="Chains_of_Honor" style="display:none">
++2 모든 스킬 레벨<br>
++200% 데몬에게 주는 데미지 상승<br>
++100% 언데드에게 주는 데미지 상승<br>
+8% 라이프 획득(공격 명중시)<br>
++70% 방어력 증가<br>
++20 힘<br>
+라이프 재생 +7<br>
+모든 저항력 +65<br>
+물리 데미지 감소 8%<br>
+25% 매직 아이템 얻을 확률 증가
+</div>
+<div id="Crescent_Moon" style="display:none">
+10% Chance To Cast Level 17 Chain Lightning On Striking<br>
+7% Chance To Cast Level 13 Static Field On Striking<br>
++20% 공격속도 증가<br>
++180-220% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+-35% 적의 라이트닝 저항력<br>
+25% 상처 악화<br>
++9-11 매직 흡수 (가변)<br>
++2 마나 상승(적 제거시)<br>
+레벨 18 스피리트 울프 (30 차지)
+</div>
+<div id="Delirium" style="display:none">
+1% Chance To Cast Level 50 Delirium* (morph) When Struck<br>
+6% Chance To Cast Level 14 Mind Blast When Struck<br>
+14% Chance To Cast Level 13 Terror When Struck<br>
+11% Chance To Cast Level 18 Confuse On Striking<br>
++2 모든 스킬 레벨<br>
++261 방어력<br>
++10 생명력<br>
+50% 몬스터로 부터 얻는 골드 증가<br>
+25% 매직 아이템 얻을 확률 증가<br>
+레벨 17 어트랙트 (60 차지)
+</div>
+<div id="Duress" style="display:none">
++40% 힛 리커버리 속도 증가<br>
++10-20% 데미지 증가 (가변)<br>
+37-133 콜드 데미지 추가 2초간 지속 (일반)<br>
+15% 강한 타격 확률<br>
+33% 상처 악화<br>
++150-200% 방어력 증가 (가변)<br>
+-20% 스테미나 소모 지연<br>
+콜드 저항력 +45%<br>
+라이트닝 저항력 +15%<br>
+파이어 저항력 +15%<br>
+포이즌 저항력 +15%
+</div>
+<div id="Enigma" style="display:none">
++2 모든 스킬 레벨<br>
++45% 달리기/걷기 속도 증가<br>
++1 워프<br>
++750-775 방어력 (가변)<br>
++ (0.75 /레벨) +0-74 힘 (캐릭터 레벨에 비례해서)<br>
+최대 라이프 증가 5%<br>
+물리 데미지 감소 8%<br>
++14 라이프 상승(적 제거시)<br>
+15% 피격시 데미지 마나로 흡수<br>
++ (1 /레벨) +1-99% 매직 아이템 얻을 확률 증가 (캐릭터 레벨에 비례해서)
+</div>
+<div id="Exile" style="display:none">
+15% Chance To Cast Level 5 Life Tap On Striking<br>
+장착시 레벨 13-16 디파이언스 오라 발동 (가변)<br>
++2 공격 오라 (팔라딘 전용)<br>
++30% 방어속도 증가<br>
+목표물 결빙<br>
++220-260% 방어력 증가 (가변)<br>
+라이프 재생 +7<br>
++5% 최대 콜드 저항력<br>
++5% 최대 파이어 저항력<br>
+25% 매직 아이템 얻을 확률 증가<br>
+내구력 1 회복 (매 4 초당)
+</div>
+<div id="Famine" style="display:none">
++30% 공격속도 증가<br>
++320-370% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+180-200 매직 데미지 추가<br>
+50-200 파이어 데미지 추가<br>
+51-250 라이트닝 데미지 추가<br>
+50-200 콜드 데미지 추가<br>
+12% 라이프 획득(공격 명중시)<br>
+몬스터 회복 저지<br>
++10 힘
+</div>
+<div id="Hand_of_Justice" style="display:none">
+100% Chance To Cast Level 36 Meteor When You Level-Up<br>
+100% Chance To Cast Level 48 Meteor When You Die<br>
+장착시 레벨 16 홀리 파이어 오라 발동<br>
++33% 공격속도 증가<br>
++280-330% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+7% 라이프 획득(공격 명중시)<br>
+-20% 적 파이어 저항력<br>
+20% 치명적 공격<br>
+목표물의 시야 감소(명중시)<br>
+목표물 결빙 +3<br>
+4% 스킬 쿨다운 감소
+</div>
+<div id="Passion" style="display:none">
++25% 공격속도 증가<br>
++160-210% 데미지 증가 (가변)<br>
+50-80% 공격등급 추가 상승 (가변)<br>
++75% 언데드에게 주는 데미지 상승<br>
++50 언데드에 대한 공격등급 상승<br>
+1-50 라이트닝 데미지 추가<br>
++1 배쉬<br>
++1 질<br>
+목표물의 시야 감소(명중시) +10<br>
+몬스터가 달아남(명중시) 25%<br>
+75% 몬스터로 부터 얻는 골드 증가<br>
+레벨 3 하트 오브 울버린 (12 차지)
+</div>
+<div id="Prudence" style="display:none">
++25% 힛 리커버리 속도 증가<br>
++140-170% 방어력 증가 (가변)<br>
+모든 저항력 +25-35 (가변)<br>
+물리 데미지 감소 3<br>
+마법과 원소 데미지 감소 17<br>
++2 마나 상승(적 제거시)<br>
++1 시야 증가<br>
+내구력 1 회복 (매 4 초당)
+</div>
+<div id="Sanctuary" style="display:none">
++20% 힛 리커버리 속도 증가<br>
++20% 방어속도 증가<br>
+20% 블럭 성공률 증가<br>
++130-160% 방어력 증가 (가변)<br>
++250 원거리 공격 방어<br>
++20 민첩성<br>
+모든 저항력 +50-70 (가변)<br>
+마법과 원소 데미지 감소 7<br>
+레벨 12 페이즈 런 (60 차지)
+</div>
+<div id="Stone" style="display:none">
++60% 힛 리커버리 속도 증가<br>
++250-290% 방어력 증가 (가변)<br>
++300 원거리 공격 방어<br>
++16 힘<br>
++16 생명력<br>
++10 에너지<br>
+모든 저항력 +15<br>
+레벨 16 몰튼 보울더 (80 차지)<br>
+레벨 16 클레이 골렘 (16 차지)
+</div>
+<div id="Wind" style="display:none">
+10% Chance To Cast Level 9 Tornado On Striking<br>
++20% 달리기/걷기 속도 증가<br>
++40% 공격속도 증가<br>
++15% 힛 리커버리 속도 증가<br>
++120-160% 데미지 증가 (가변)<br>
+-50% 목표물의 방어<br>
++50 공격 등급<br>
+목표물의 시야 감소(명중시)<br>
++1 시야 증가<br>
+레벨 13 트위스터 (127 차지)
+</div>
+<div id="Brand" style="display:none">
+35% Chance To Cast Level 14 Amplify Damage When Struck<br>
+100% Chance To Cast Level 18 Bone Spear On Striking<br>
++260-340% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+20% 공격등급 추가 상승<br>
++280-330% 데몬에게 주는 데미지 상승 (가변)<br>
+20% 치명적 공격<br>
+몬스터 회복 저지<br>
+적을 밀쳐냄<br>
+폭발 화살 발사 (15)
+</div>
+<div id="Dragon" style="display:none">
+20% Chance to Cast Level 18 Venom When Struck<br>
+12% Chance To Cast Level 15 Hydra On Striking<br>
+장착시 레벨 14 홀리 파이어 오라 발동<br>
++360 방어력<br>
++230 원거리 공격 방어<br>
++3-5 모든 능력치 (가변)<br>
++0.375-37.125 힘 (캐릭터 레벨에 비례해서)<br>
+최대 마나 증가 5% (갑옷만)<br>
++50 마나 (방패만)<br>
++5% 최대 라이트닝 저항력<br>
+물리 데미지 감소 7
+</div>
+<div id="Dream" style="display:none">
+10% Chance To Cast Level 15 Confuse When Struck<br>
+장착시 레벨 15 홀리 쇼크 오라 발동<br>
++20-30% 힛 리커버리 속도 증가 (가변)<br>
++30% 방어력 증가<br>
++150-220 방어력 (가변)<br>
++10 생명력<br>
+최대 라이프 증가 5% (투구만)<br>
++50 라이프 (방패만)<br>
++0.625-61.875 마나 (캐릭터 레벨에 비례해서)<br>
+모든 저항력 +5-20 (가변)<br>
+12-25% 매직 아이템 얻을 확률 증가 (가변)
+</div>
+<div id="Edge" style="display:none">
+장착시 레벨 15 쏜즈 오라 발동<br>
++35% 공격속도 증가<br>
++320-380% 데몬에게 주는 데미지 상승 (가변)<br>
++280% 언데드에게 주는 데미지 상승<br>
++75 포이즌 데미지 (매 5초당)<br>
+7% 라이프 획득(공격 명중시)<br>
+몬스터 회복 저지<br>
++5-10 모든 능력치 (가변)<br>
++2 마나 상승(적 제거시)<br>
+상점에서 파는 모든 물품의 가격 하락 15%
+</div>
+<div id="Faith" style="display:none">
+장착시 레벨 12-15 파나티시즘 오라 발동 (가변)<br>
++1-2 모든 스킬 레벨 (가변)<br>
++330% 데미지 증가<br>
+목표물의 방어력 무시<br>
+300% 공격등급 추가 상승<br>
++75% 언데드에게 주는 데미지 상승<br>
++50 언데드에 대한 공격등급 상승<br>
++120 파이어 데미지<br>
+모든 저항력 +15<br>
+10% 다음으로 소생: 리턴드<br>
+75% 몬스터로 부터 얻는 골드 증가
+</div>
+<div id="Harmony" style="display:none">
+장착시 레벨 10 비거 오라 발동<br>
++200-275% 데미지 증가 (가변)<br>
++9 최소 데미지<br>
++9 최대 데미지<br>
+55-160 라이트닝 데미지 추가<br>
+55-160 파이어 데미지 추가<br>
+55-160 콜드 데미지 추가<br>
++2-6 발키리 (가변)<br>
++10 민첩성<br>
+마나 재생 20%<br>
++2 마나 상승(적 제거시)<br>
++2 시야 증가<br>
+레벨 20 리바이브 (25 차지)
+</div>
+<div id="Ice" style="display:none">
+100% Chance To Cast Level 40 Blizzard When You Level-up<br>
+25% Chance To Cast Level 22 Frost Nova On Striking<br>
+장착시 레벨 18 홀리 프리즈 오라 발동<br>
++20% 공격속도 증가<br>
++140-210% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
++25-30% 콜드 스킬 데미지 (가변)<br>
+-20% 적 콜드 저항력<br>
+7% 라이프 획득(공격 명중시)<br>
+20% 치명적 공격<br>
+3.125-309.375 몬스터로 부터 얻는 골드 증가 (캐릭터 레벨에 비례해서)
+</div>
+<div id="Insight" style="display:none">
+장착시 레벨 12-17 메디테이션 오라 발동 (가변)<br>
++35% 캐스팅 속도 증가<br>
++200-260% 데미지 증가 (가변)<br>
++9 최소 데미지<br>
+180-250% 공격등급 추가 상승 (가변)<br>
+5-30 파이어 데미지 추가<br>
++75 포이즌 데미지 (매 5초당)<br>
++1-6 리썰 스트라이크 (가변)<br>
++5 모든 능력치<br>
++2 마나 상승(적 제거시)<br>
+23% 매직 아이템 얻을 확률 증가
+</div>
+<div id="Lawbringer" style="display:none">
+20% Chance To Cast Level 15 Decrepify On Striking<br>
+장착시 레벨 16-18 생추어리 오라 발동 (가변)<br>
+-50% 목표물의 방어<br>
+150-210 파이어 데미지 추가<br>
+130-180 콜드 데미지 추가<br>
+7% 라이프 획득(공격 명중시)<br>
+죽은 몬스터가 안식에 듦<br>
++200-250 원거리 공격 방어 (가변)<br>
++10 민첩성<br>
+75% 몬스터로 부터 얻는 골드 증가
+</div>
+<div id="Rift" style="display:none">
+20% Chance To Cast Level 16 Tornado On Striking<br>
+16% Chance To Cast Level 21 Frozen Orb On Attack<br>
+20% 공격등급 추가 상승<br>
+160-250 매직 데미지 추가<br>
+60-180 파이어 데미지 추가<br>
++5-10 모든 능력치 (가변)<br>
++10 민첩성<br>
+38% 피격시 데미지 마나로 흡수<br>
+75% 몬스터로 부터 얻는 골드 증가<br>
+레벨 15 아이언 메이든 (40 차지)<br>
+착용 가능 요구치 -20%
+</div>
+<div id="Spirit" style="display:none">
+<b>무기</b><br>
++2 모든 스킬 레벨<br>
++ (0.375% /레벨) +0-37% 캐스팅 속도 증가 (캐릭터 레벨에 비례해서)<br>
++55% 힛 리커버리 속도 증가<br>
+1-50 라이트닝 데미지 추가<br>
+3-14 콜드 데미지 추가 3 초간 지속 (일반)<br>
++75 포이즌 데미지 (매 5초당)<br>
+7% 라이프 획득(공격 명중시)<br>
++75 원거리 공격 방어<br>
++ (1 /레벨) +1-99 마나 (캐릭터 레벨에 비례해서)<br>
++3-8 매직 흡수 (가변)
+<br>
+<b>방패</b><br>
++2 모든 스킬 레벨<br>
++25-35% 캐스팅 속도 증가 (가변)<br>
++55% 힛 리커버리 속도 증가<br>
++250 원거리 공격 방어<br>
++22 생명력<br>
++89-112 마나 (가변)<br>
+콜드 저항력 +35%<br>
+라이트닝 저항력 +35%<br>
+포이즌 저항력 +35%<br>
++3-8 매직 흡수 (가변)<br>
+공격자가 받는 데미지 14
+</div>
+<div id="Voice_of_Reason" style="display:none">
+15% Chance To Cast Level 13 Frozen Orb On Striking<br>
+18% Chance To Cast Level 20 Ice Blast On Striking<br>
++50 공격 등급<br>
++220-350% 데몬에게 주는 데미지 상승<br>
++355-375% 언데드에게 주는 데미지 상승 (가변)<br>
++50 언데드에 대한 공격등급 상승<br>
+100-220 콜드 데미지 추가<br>
+-24% 적 콜드 저항력<br>
++10 민첩성<br>
+결빙되지 않음<br>
+75% 몬스터로 부터 얻는 골드 증가<br>
++1 시야 증가
+</div>
+<div id="Wrath" style="display:none">
+30% Chance To Cast Level 1 Decrepify On Striking<br>
+5% Chance To Cast Level 10 Life Tap On Striking<br>
++375% 데몬에게 주는 데미지 상승<br>
++100 데몬에 대한 공격등급 상승<br>
++250-300% 언데드에게 주는 데미지 상승 (가변)<br>
+85-120 매직 데미지 추가<br>
+41-240 라이트닝 데미지 추가<br>
+20% 강한 타격 확률<br>
+몬스터 회복 저지<br>
++10 에너지<br>
+결빙되지 않음
+</div>
+<div id="Bone" style="display:none">
+15% Chance To Cast level 10 Bone Armor When Struck<br>
++2 네크로맨서 스킬 레벨<br>
++100-150 마나 (가변)<br>
+모든 저항력 +30<br>
+물리 데미지 감소 7<br>
+1 파이어 골렘 추가 소환 가능
+</div>
+<div id="Enlightenment" style="display:none">
+5% Chance To Cast Level 15 Meteor When Struck<br>
+5% Chance To Cast level 15 Fire Ball On Striking<br>
++2 소서리스 스킬 레벨<br>
++1 웜쓰<br>
++30% 방어력 증가<br>
+파이어 저항력 +30%<br>
+물리 데미지 감소 7
+</div>
+<div id="Plague" style="display:none">
+25% Chance to Cast level 15 Poison Nova on Striking<br>
+20% Chance to Cast level 12 Lower Resist When Struck<br>
+장착시 레벨 13-17 클렌징 오라 발동 (가변) (Tooltip shows incorrect aura level)<br>
++1-2 모든 스킬 레벨 (가변)<br>
++260-380% 데몬에게 주는 데미지 상승 (가변)<br>
+-23% 적 포이즌 저항력<br>
+0-37% 치명적 공격 (캐릭터 레벨에 비례해서)<br>
+25% 상처 악화<br>
+목표물 결빙 +3<br>
++10 힘<br>
+</div>
+<div id="Pattern" style="display:none">
++30% 방어속도 증가<br>
++40-80% 데미지 증가 (가변)<br>
+10% 공격등급 추가 상승<br>
+12-32 파이어 데미지 추가<br>
+1-50 라이트닝 데미지 추가<br>
++75 포이즌 데미지 (5초간)<br>
++6 힘<br>
++6 민첩성<br>
+모든 저항력 +15<br>
++2 마나 상승(적 제거시)<br>
+</div>
+<div id="Myth" style="display:none">
+3% Chance To Cast Level 1 Howl When Struck<br>
+10% Chance To Cast Level 1 Taunt On Striking<br>
++2 바바리안 스킬 레벨<br>
++30 원거리 공격 방어<br>
+라이프 재생 +10<br>
+공격자가 받는 데미지 14<br>
+착용 가능 요구치 -15%
+</div>
+<div id="Peace" style="display:none">
++2 아마존 스킬 레벨<br>
++20% 힛 리커버리 속도 증가<br>
++2 리썰 스트라이크<br>
+콜드 저항력 +30%<br>
+공격자가 받는 데미지 14<br>
+1 발키리 추가 소환 가능
+</div>
+<div id="Principle" style="display:none">
+100% 기회로 레벨 5 홀리볼트 시전 (타격시)<br>
++2 팔라딘 스킬 레벨<br>
+15% 스테미나 소모 지연<br>
++5% 최대 포이즌 저항력<br>
+파이어 저항력 +30%
+</div>
+<div id="Rain" style="display:none">
+5% 기회로 레벨 15 사이클론 아머 시전 (피격시)<br>
++2 드루이드 스킬 레벨<br>
++100-150 마나 (가변)<br>
+라이트닝 저항력 +30%<br>
+마법과 원소 데미지 감소 7<br>
+15% 피격시 데미지 마나로 흡수<br>
+1 그리즐리 베어 추가 소환 가능
+</div>
+<div id="Treachery" style="display:none">
+5% 기회로 레벨 15 페이드 시전 (피격시)<br>
+25% 기회로 레벨 15 베놈 시전 (타격시)<br>
++2 어쌔신 스킬 레벨<br>
++45% 공격속도 증가<br>
++20% 힛 리커버리 속도 증가<br>
+콜드 저항력 +30%<br>
+50% 몬스터로 부터 얻는 골드 증가
+</div>
+<div id="Grief" style="display:none">
+35% 기회로 레벨 15 베놈 시전 (타격시)<br>
++ (4 /레벨) +4-400 최소 데미지 (캐릭터 레벨에 비례해서)<br>
++ (4.37 /레벨) +4-437 최대 데미지 (캐릭터 레벨에 비례해서)<br>
++30-40% 공격속도 증가<br>
+목표물의 방어력 무시<br>
+-25% 목표물의 방어<br>
+5-30 파이어 데미지 추가<br>
+-20-25% 적 포이즌 저항력 (가변)<br>
+20% 치명적 공격<br>
+몬스터 회복 저지<br>
++2 마나 상승(적 제거시)<br>
++10-15 라이프 상승(적 제거시) (가변)
+</div>
+<div id="Pride" style="display:none">
+25% Chance to Cast Level 17 Fire Wall When Struck<br>
+장착시 레벨 16-20 컨센트레이션 오라 발동<br>
+260-300% 공격등급 추가 상승<br>
++ (1 /레벨) +1-99% 데몬에게 주는 데미지 상승 (캐릭터 레벨에 비례해서)<br>
+50-280 라이트닝 데미지 추가<br>
+20% 치명적 공격<br>
+목표물의 시야 감소(명중시)<br>
+목표물 결빙 +3<br>
++10 생명력<br>
+라이프 재생 +8<br>
++ (1.875 /레벨) +1.875-185.625% 몬스터로 부터 얻는 골드 증가 (캐릭터 레벨에 비례해서)<br>
+4% 스킬 쿨다운 감소
+</div>
+<div id="Doom" style="display:none">
+5% Chance to Cast Level 18 Volcano On Striking<br>
+장착시 레벨 12 홀리 프리즈 오라 발동<br>
++2 모든 스킬 레벨<br>
++45% 공격속도 증가<br>
++330-370% 데미지 증가 (가변)<br>
+-(40-60)% 적 콜드 저항력 (가변)<br>
+20% 치명적 공격<br>
+25% 상처 악화<br>
+몬스터 회복 저지<br>
+목표물 결빙 +3<br>
+4% 스킬 쿨다운 감소
+</div>
+<div id="Heart_of_the_Oak" style="display:none">
++3 모든 스킬 레벨<br>
++40% 캐스팅 속도 증가<br>
++75% 데몬에게 주는 데미지 상승<br>
++100 데몬에 대한 공격등급 상승<br>
+3-14 콜드 데미지 추가, 3초간 지속 (일반)<br>
+7% 마나 획득(공격 명중시)<br>
++10 민첩성<br>
+라이프 재생 +20<br>
+최대 마나 증가 15%<br>
+모든 저항력 +30-40 (가변)<br>
+최대 라이프 증가 6-8% (가변)<br>
+</div>
+<div id="Zephyr" style="display:none">
++25% 달리기/걷기 속도 증가<br>
++25% 공격속도 증가<br>
++33% 데미지 증가<br>
+-25% 목표물의 방어<br>
++66 공격 등급<br>
+1-50 라이트닝 데미지 추가<br>
++25 방어력<br>
++3 페이즈 런
+</div>
+<div id="Silence" style="display:none">
+장착시 레벨 8 클렌징 오라 발동<br>
+200% 데미지 증가<br>
++75% 언데드에게 주는 데미지 상승<br>
+착용 가능 요구치 -20%<br>
+20% 공격속도 증가<br>
++50 언데드에 대한 공격등급 상승<br>
++2 모든 스킬 레벨<br>
+모든 저항력 +75<br>
+20% 힛 리커버리 속도 증가<br>
+11% 마나 획득(공격 명중시)<br>
+목표물의 시야 감소(명중시) +33<br>
++2 마나 상승(적 제거시)<br>
+30% 매직 아이템 얻을 확률 증가<br>
+</div>
+<div id="Infinity" style="display:none">
+50% Chance to Cast Level 20 Chain Lightning When You Kill An Enemy<br>
+장착시 레벨 12 컨빅션 오라 발동<br>
++35% 달리기/걷기 속도 증가<br>
++125-170% 데미지 증가 (가변)<br>
+-(45-55)% 적의 라이트닝 저항력 (가변)<br>
+40% 강한 타격 확률<br>
+몬스터 회복 저지<br>
++ (0.5 /레벨) 0.5-49.5 생명력(캐릭터 레벨에 비례해서)<br>
+레벨 21 사이클론 아머 (30 차지)
+</div>
+<div id="Call_To_Arms" style="display:none">
++1 모든 스킬 레벨<br>
++40% 공격속도 증가<br>
++250-290% 데미지 증가 (가변)<br>
+5-30 파이어 데미지 추가<br>
+7% 라이프 획득(공격 명중시)<br>
++2-6 배틀 커맨드 (가변)<br>
++1-6 배틀 오더 (가변)<br>
++1-4 배틀 크라이 (가변)<br>
+몬스터 회복 저지<br>
+라이프 재생 +12<br>
+30% 매직 아이템 얻을 확률 증가<br>
+배틀 오더의 라이프와 마나 효과가 절반으로 적용됨
+</div>
+<div id="Splendor" style="display:none">
++1 모든 스킬 레벨<br>
++10% 캐스팅 속도 증가<br>
++20% 방어속도 증가<br>
++60-100% 방어력 증가 (가변)<br>
++10 에너지<br>
+마나 재생 15%<br>
+50% 몬스터로 부터 얻는 골드 증가<br>
+20% 매직 아이템 얻을 확률 증가<br>
++3 시야 증가
+</div>
+<div id="Gloom" style="display:none">
+15% Chance To Cast Level 3 Dim Vision When Struck<br>
++10% 힛 리커버리 속도 증가<br>
++200-260% 방어력 증가 (가변)<br>
++10 힘<br>
+모든 저항력 +45<br>
+결빙 시간 1/2 감소<br>
+5% 피격시 데미지 마나로 흡수<br>
+-3 시야 증가
+</div>
+<div id="Phoenix" style="display:none">
+<b>무기</b><br>
+100% Chance To Cast Level 40 Meteor When You Level-up<br>
+40% Chance To Cast Level 22 Firestorm On Striking<br>
+장착시 레벨 10 리뎀션 오라 발동<br>
++350-400% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+14% 마나 획득(공격 명중시)<br>
+-28% 적 파이어 저항력<br>
+20% 치명적 공격<br>
++350-400 원거리 공격 방어 (가변)<br>
++15-21 파이어 흡수 (가변)
+<br>
+<b>방패</b><br>
+100% Chance To Cast Level 40 Meteor When You Level-up<br>
+40% Chance To Cast Level 22 Firestorm On Striking<br>
+장착시 레벨 10 리뎀션 오라 발동<br>
++350-400 원거리 공격 방어 (가변)<br>
++350-400% 데미지 증가 (가변)<br>
+-28% 적 파이어 저항력<br>
++50 라이프<br>
++5% 최대 라이트닝 저항력<br>
++10% 최대 파이어 저항력<br>
++15-21 파이어 흡수 (가변)
+</div>
+<div id="Oath" style="display:none">
+30% Chance To Cast Level 20 Bone Spirit On Striking<br>
+파괴안됨<br>
++50% 공격속도 증가<br>
++210-340% 데미지 증가 (가변)<br>
++75% 데몬에게 주는 데미지 상승<br>
++100 데몬에 대한 공격등급 상승<br>
+몬스터 회복 저지<br>
++10 에너지<br>
++10-15 매직 흡수 (가변)<br>
+레벨 16 하트 오브 울버린 (20 차지)<br>
+레벨 17 아이언 골렘 (14 차지)
+</div>
+<div id="Kingslayer" style="display:none">
++30% 공격속도 증가<br>
++230-270% 데미지 증가 (가변)<br>
+-25% 목표물의 방어<br>
+20% 공격등급 추가 상승<br>
+33% 강한 타격 확률<br>
+50% 상처 악화<br>
++1 벤젠스<br>
+몬스터 회복 저지<br>
++10 힘<br>
+40% 몬스터로 부터 얻는 골드 증가
+</div>
+<div id="Fortitude" style="display:none">
+<b>무기</b><br>
+20% Chance To Cast Level 15 Chilling Armor when Struck<br>
++25% 캐스팅 속도 증가<br>
++300% 데미지 증가<br>
++9 최소 데미지<br>
++50 공격 등급<br>
+20% 치명적 공격<br>
+몬스터가 달아남(명중시) 25%<br>
++200% 방어력 증가<br>
++(1-1.5 /레벨) +(1-1.5)-(99-148.5) 라이프 (캐릭터 레벨에 비례해서)<br>
+모든 저항력 +25-30 (가변)<br>
+12% 피격시 데미지 마나로 흡수<br>
++1 시야 증가
+<br>
+<b>갑옷</b><br>
+20% Chance To Cast Level 15 Chilling Armor when Struck<br>
++25% 캐스팅 속도 증가<br>
++300% 데미지 증가<br>
++200% 방어력 증가<br>
++15 방어력<br>
++(1-1.5 /레벨) +(1-1.5)-(99-148.5) 라이프 (캐릭터 레벨에 비례해서)<br>
+라이프 재생 +7<br>
++5% 최대 라이트닝 저항력<br>
+모든 저항력 +25-30 (가변)<br>
+물리 데미지 감소 7<br>
+12% 피격시 데미지 마나로 흡수<br>
++1 시야 증가
+</div>
+<div id="Honor" style="display:none">
++160% 데미지 증가<br>
++9 최소 데미지<br>
++9 최대 데미지<br>
+25% 치명적 공격<br>
++250 공격 등급<br>
++1 모든 스킬 레벨<br>
+7% 라이프 획득(공격 명중시)<br>
+라이프 재생 +10<br>
++10 힘<br>
++1 시야 증가<br>
++2 마나 상승(적 제거시)
+</div>
+<div id="Breath_of_the_Dying" style="display:none">
+50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy<br>
+파괴안됨<br>
++60% 공격속도 증가<br>
++350-400% 데미지 증가 (가변)<br>
++200% 언데드에게 주는 데미지 상승<br>
+-25% 목표물의 방어<br>
++50 공격 등급<br>
++50 언데드에 대한 공격등급 상승<br>
+7% 마나 획득(공격 명중시)<br>
+12-15% 라이프 획득(공격 명중시) (가변)<br>
+몬스터 회복 저지<br>
++30 모든 능력치<br>
++1 시야 증가<br>
+착용 가능 요구치 -20%
+</div>
+<div id="Last_Wish" style="display:none">
+6% Chance To Cast Level 11 Fade When Struck<br>
+10% Chance To Cast Level 18 Life Tap On Striking<br>
+20% Chance To Cast Level 20 Charged Bolt On Attack<br>
+장착시 레벨 17 마이트 오라 발동<br>
++330-375% 데미지 증가 (가변)<br>
+목표물의 방어력 무시<br>
+60-70% 강한 타격 확률 (가변)<br>
+몬스터 회복 저지<br>
+목표물의 시야 감소(명중시)<br>
++ (0.5 /레벨) +0.5-49.5% 매직 아이템 얻을 확률 증가 (캐릭터 레벨에 비례해서)
+</div>
+<div id="Destruction" style="display:none">
+23% Chance To Cast Level 12 Volcano On Striking<br>
+5% Chance To Cast Level 23 Molten Boulder On Striking<br>
+100% Chance To Cast Level 45 Meteor When You Die<br>
+15% Chance To Cast Level 22 Nova On Attack<br>
++350% 데미지 증가<br>
+목표물의 방어력 무시<br>
+100-180 매직 데미지 추가<br>
+7% 마나 획득(공격 명중시)<br>
+20% 강한 타격 확률<br>
+20% 치명적 공격<br>
+몬스터 회복 저지<br>
++10 민첩성
+</div>
+<div id="Death" style="display:none">
+100% Chance To Cast Level 44 Chain Lightning When You Die<br>
+25% Chance To Cast Level 18 Glacial Spike On Attack<br>
+파괴안됨<br>
++300-385% 데미지 증가<br>
+20% 공격등급 추가 상승<br>
++50 공격 등급<br>
+1-50 라이트닝 데미지 추가<br>
+7% 마나 획득(공격 명중시)<br>
+50% 강한 타격 확률<br>
++ (0.5 /레벨) +0.5-49.5% 치명적 공격 (캐릭터 레벨에 비례해서)<br>
++1 시야 증가<br>
+레벨 22 블러드 골렘 (15 차지)<br>
+착용 가능 요구치 -20%
+</div>
+<div id="Eternity" style="display:none">
+파괴안됨<br>
++260-310% 데미지 증가 (가변)<br>
++9 최소 데미지<br>
+7% 라이프 획득(공격 명중시)<br>
+20% 강한 타격 확률<br>
+목표물의 시야 감소(명중시)<br>
+목표물 둔화 33%<br>
+마나 재생 16%<br>
+라이프 재생 +16<br>
+결빙되지 않음<br>
+30% 매직 아이템 얻을 확률 증가<br>
+레벨 8 리바이브 (88 차지)
+</div>
+<div id="Obedience" style="display:none">
+30% Chance To Cast Level 21 Enchant When You Kill An Enemy<br>
+40% 힛 리커버리 속도 증가<br>
++370% 데미지 증가<br>
+-25% 목표물의 방어<br>
+3-14 콜드 데미지 추가, 3 초간 지속 (일반)<br>
+-25% 적 파이어 저항력<br>
+40% 강한 타격 확률<br>
++200-300 방어력 (가변)<br>
++10 힘<br>
++10 민첩성<br>
+모든 저항력 +20-30 (가변)<br>
+착용 가능 요구치 -20%
+</div>
+</body>
+<!-- Mirrored from pathofdiablo.com/runewizard/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jun 2020 18:47:48 GMT -->
+</html>
